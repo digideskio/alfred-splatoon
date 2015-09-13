@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.flipxfx.splatoon</string>
+	<key>category</key>
+	<string>Internet</string>
+	<key>connections</key>
+	<dict>
+		<key>6E388BEB-A066-4D74-9A99-F04AD7EA7A4C</key>
+		<array/>
+		<key>860AB9F1-30AD-48FE-A9D7-B6E612BFA3D6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9B4D7102-C06E-414F-992E-56082CF9BE1F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Phillip Lanclos</string>
+	<key>description</key>
+	<string>Splatoon helpers (maps, wiki)</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Splatoon</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>69</integer>
+				<key>keyword</key>
+				<string>splatmaps</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Loading maps</string>
+				<key>script</key>
+				<string>/usr/bin/python splatoon.py "maps"</string>
+				<key>subtext</key>
+				<string>List Splatoon map information</string>
+				<key>title</key>
+				<string>Splatoon Maps</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>6E388BEB-A066-4D74-9A99-F04AD7EA7A4C</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>splatwiki</string>
+				<key>subtext</key>
+				<string>Search Splatoon wiki</string>
+				<key>text</key>
+				<string>Splatoon Wiki</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>860AB9F1-30AD-48FE-A9D7-B6E612BFA3D6</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<true/>
+				<key>url</key>
+				<string>http://splatoonwiki.org/w/index.php?search={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>9B4D7102-C06E-414F-992E-56082CF9BE1F</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>69</integer>
+				<key>keyword</key>
+				<string>splatupdate</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>script</key>
+				<string>/usr/bin/python splatoon.py "workflow:update"</string>
+				<key>subtext</key>
+				<string>Update Splatoon workflow</string>
+				<key>title</key>
+				<string>Splatoon Update</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>8D2F793F-5FBC-4D82-9DB1-60708A7FA444</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>69</integer>
+				<key>keyword</key>
+				<string>splathelp</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>script</key>
+				<string>/usr/bin/python splatoon.py "workflow:help"</string>
+				<key>subtext</key>
+				<string>Open Splatoon workflow help</string>
+				<key>title</key>
+				<string>Splatoon Help</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>60A019EE-A759-45C2-993B-5BB295B22C22</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Splatoon helpers (maps, wiki).
+
+Use “ihelp” for more help.
+
+More info at http://flipxfx.com/blog/alfred-splatoon.</string>
+	<key>uidata</key>
+	<dict>
+		<key>60A019EE-A759-45C2-993B-5BB295B22C22</key>
+		<dict>
+			<key>ypos</key>
+			<real>460</real>
+		</dict>
+		<key>6E388BEB-A066-4D74-9A99-F04AD7EA7A4C</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>860AB9F1-30AD-48FE-A9D7-B6E612BFA3D6</key>
+		<dict>
+			<key>ypos</key>
+			<real>240</real>
+		</dict>
+		<key>8D2F793F-5FBC-4D82-9DB1-60708A7FA444</key>
+		<dict>
+			<key>ypos</key>
+			<real>350</real>
+		</dict>
+		<key>9B4D7102-C06E-414F-992E-56082CF9BE1F</key>
+		<dict>
+			<key>ypos</key>
+			<real>240</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>flipxfx.com</string>
+</dict>
+</plist>
